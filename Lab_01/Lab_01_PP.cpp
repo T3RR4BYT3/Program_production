@@ -1,92 +1,108 @@
 //  Lab 01
 //      Program production
-//  Pages visualasation
-//      Ovsyznnikov Vitaliy
+//  Pages visualisation
+//      Ovsyannikov Vitaliy
 //  IKBO-6-16
 
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
-void print(int amount, int current);
+class Pager{
+public:
+    int amount, current;
+    unsigned int* array = new unsigned int [amount+1];
+    void pager();
+    void print();
+    
+    Pager()
+    {
+        cout << "Enter amount of pages: "; cin >> amount;
+        cout << "Enter current page: "; cin >> current;
+    }
+};
+
+using namespace std;
+
 
 int main()
 {
-    int amount, current = 1;
-    
-    cout << "Enter the amount of pages: ";  cin >> amount;
-    if (amount < 1)
+    Pager pg;
+    bool cont = 1;
+    while (cont)
     {
-        do{
-        cout << "Error, try again. \n\n";
-
-        cout << "Enter the amount of pages: ";  cin >> amount;
-       
-        }while (amount < 1);
+        pg.pager();
+        pg.print();
+        cout << "\n\nContinue? (1/0)\n"; cin >> cont;
+        if (cont)
+        {
+            cout << "Enter current page: "; cin >> pg.current;
+        }
     }
+    cout << "\n\n\n\n\nSee ya\n\n";
     
-    cout << "\nEnter current page: "; cin >> current;
-    if ((current < 1) || (current > amount))
-    {
-        do{
-            cout << "Invalid input. Try again\n\n";
-            cout << "\nEnter current page: "; cin >> current;
-        }while((current < 1) || (current > amount));
-    }
-    
-    print(amount, current);
-    
-    cout << "\n\n";
 }
 
-void print(int amount, int current)
+void Pager:: pager()
 {
-    if (amount <= 6)
+    for (int i = 1; i <= amount; i++)
     {
-        for (int i = 1; i <= amount; i++)
+        if ((i == 1) || (i == amount))
+            array[i] = 1;
+        else if (i == current)
         {
-            if ( i == current)
-                cout << '[' << i << "] ";
+            if(current <= 4)
+                for (int k = 1; k <= current + 2; k++)
+                {
+                    array[k] = 1;
+                    i = k;
+                }
+            
+            else if (amount - current <= 2)
+                for (int k = amount; k >= current - 2; k--)
+                {
+                    array[k] = 1;
+                    i = amount - 1;
+                }
+
             else
-                cout << i << ' ';
+                for (int k = current - 2; k <= current + 2; k++)
+                {
+                    array[k] = 1;
+                    i = k;
+                }
+            
         }
+        else
+            array[i] = 0;
     }
     
-    else{
-        if (current - 1 <= 2)
+    if (current == 1)
+        for (int k = 1; k <= current + 2; k++)
+            array[k] = 1;
+    if (current == amount)
+        for (int k = amount; k >= current - 2; k--)
+            array[k] = 1;
+}
+
+void Pager::print()
+{
+    cout << "\n\n";
+    int k = 1;
+    while (k <= amount)
+    {
+        if ((array[k] == 1) && (array[k+1] == 0) && (k != amount))
+            cout << k << " .. ";
+            
+        else if ((array[k] == 1) && (k != current) && (k != amount))
+            cout << k << ' ';
+        
+        else if ((array[k] == 1) && (k == current))
         {
-            for (int i = 1; i < 6; i++)
-            {
-                if ( i == current)
-                    cout << '[' << i << "] ";
-                else
-                    cout << i << ' ';
-            }
-            cout << ".. " << amount;
+            cout << '[' << k << "] ";
         }
-        else if((current - 1 > 2) && (amount - current > 2))
-        {
-            cout << 1 << " .. ";
-            for (int i = 2; i >= -2; i--)
-            {
-                if ( current - i == current)
-                    cout << '[' << current << "] ";
-                else
-                    cout << current - i << ' ';
-            }
-            cout << ".. " << amount;
-        }
-        else if (amount - current < 4)
-        {
-            cout << 1 << " .. ";
-            for (int i = 4; i >= 0; i--)
-            {
-                if (amount - i == current)
-                    cout << '[' << amount - i << "] ";
-                else
-                    cout << amount - i << ' ';
-            }
-        }
+        else if (k == amount)
+            cout << k << '\n';
+        k++;
     }
 }
