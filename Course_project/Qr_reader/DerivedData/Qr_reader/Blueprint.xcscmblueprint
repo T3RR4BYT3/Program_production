@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A0EF23FFCE50852B85C324CC184331D763C3C174",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A0EF23FFCE50852B85C324CC184331D763C3C174" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2C30C7F5-BF07-4D44-8D99-D3560BA90593",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A0EF23FFCE50852B85C324CC184331D763C3C174" : "Program_production\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Qr_reader",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Course_project\/Qr_reader\/Qr_reader.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/T3RR4BYT3\/Program_production.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A0EF23FFCE50852B85C324CC184331D763C3C174"
+    }
+  ]
+}
