@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "cb7f2f23d41efe63e1dfe3c9e127d2f1"
-build_time: [1521629816, 844871000]
+build_time: [1521632826, 483725000]
 inputs:
-  "/Users/vitalya/Documents/GitHub/Program_production/Course_project/Qr_reader/Qr_reader/ViewController.swift": [1521629633, 0]
+  "/Users/vitalya/Documents/GitHub/Program_production/Course_project/Qr_reader/Qr_reader/ViewController.swift": [1521632421, 0]
   "/Users/vitalya/Documents/GitHub/Program_production/Course_project/Qr_reader/Qr_reader/AppDelegate.swift": [1521626582, 0]

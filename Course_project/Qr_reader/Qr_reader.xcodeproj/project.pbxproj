@@ -12,7 +12,7 @@
 		D8A1C0CA206265560043FAFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A1C0C8206265560043FAFF /* Main.storyboard */; };
 		D8A1C0CC206265560043FAFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A1C0CB206265560043FAFF /* Assets.xcassets */; };
 		D8A1C0CF206265560043FAFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A1C0CD206265560043FAFF /* LaunchScreen.storyboard */; };
-		D8A1C0F320626EF60043FAFF /* Square.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A1C0F220626EF60043FAFF /* Square.png */; };
+		D8A1C0F5206273DF0043FAFF /* Square.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A1C0F4206273DF0043FAFF /* Square.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 		D8A1C0D0206265560043FAFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8A1C0D5206265560043FAFF /* Qr_readerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Qr_readerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A1C0E0206265560043FAFF /* Qr_readerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Qr_readerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8A1C0F220626EF60043FAFF /* Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Square.png; sourceTree = "<group>"; };
+		D8A1C0F4206273DF0043FAFF /* Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Square.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 				D8A1C0C8206265560043FAFF /* Main.storyboard */,
 				D8A1C0CB206265560043FAFF /* Assets.xcassets */,
 				D8A1C0CD206265560043FAFF /* LaunchScreen.storyboard */,
-				D8A1C0F220626EF60043FAFF /* Square.png */,
+				D8A1C0F4206273DF0043FAFF /* Square.png */,
 				D8A1C0D0206265560043FAFF /* Info.plist */,
 			);
 			path = Qr_reader;
@@ -211,7 +211,7 @@
 			files = (
 				D8A1C0CF206265560043FAFF /* LaunchScreen.storyboard in Resources */,
 				D8A1C0CC206265560043FAFF /* Assets.xcassets in Resources */,
-				D8A1C0F320626EF60043FAFF /* Square.png in Resources */,
+				D8A1C0F5206273DF0043FAFF /* Square.png in Resources */,
 				D8A1C0CA206265560043FAFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,7 +401,6 @@
 		D8A1C0EA206265560043FAFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q66LD4VF2K;
 				INFOPLIST_FILE = Qr_reader/Info.plist;
@@ -416,7 +415,6 @@
 		D8A1C0EB206265560043FAFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q66LD4VF2K;
 				INFOPLIST_FILE = Qr_reader/Info.plist;

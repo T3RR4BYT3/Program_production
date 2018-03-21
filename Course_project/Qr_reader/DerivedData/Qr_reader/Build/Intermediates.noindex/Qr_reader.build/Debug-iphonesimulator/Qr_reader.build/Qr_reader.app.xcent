@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>FAKETEAMID.MTU.MIREA.Qr-reader</string>
+	<string>Q66LD4VF2K.MTU.MIREA.Qr-reader</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>FAKETEAMID.MTU.MIREA.Qr-reader</string>
+		<string>Q66LD4VF2K.MTU.MIREA.Qr-reader</string>
 	</array>
 </dict>
 </plist>
